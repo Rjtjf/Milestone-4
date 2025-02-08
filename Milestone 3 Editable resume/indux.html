@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Resume Builder By Shahzada Haris</h1>
+    <form id="Resume-Form">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name </label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone </label>
+            <input type="text" id="phone" name="phone" required>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education </label>
+            <textarea id="Education" name="Education" required></textarea> <br>
+            
+            <label for="Degree">Degree</label>
+            <textarea id="Degree" name="Degree" required></textarea> <br>
+        </fieldset>        
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="Experience">Experience </label>
+            <textarea id="Experience" name="Experience" required></textarea>
+        </fieldset>
+        
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Skill </label>
+            <textarea id="Skills" name="Skills" required></textarea>
+        </fieldset>
+
+        <!-- References -->
+        <fieldset>
+            <legend>References</legend>
+            <label for="References">References</label>
+            <textarea id="References" name="References"></textarea>
+        </fieldset>
+
+        <!-- Button -->
+        <button type="submit"><b>Generate Resume</b></button>
+    </form>
+
+ <br>
+    <!-- Dynamic and Editable Resume -->
+    <div id="Resume-Display" contenteditable="true">
+        <!-- resume will be generated here -->
+    </div>
+
+    <script src="script.ts"></script>
+</body>
+</html>
